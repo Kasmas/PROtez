@@ -6,6 +6,7 @@
 int main() {
 	int accumulator = 0, second_operand;
 	char key;
+	
 	do {
 		system("CLS");
 
@@ -48,6 +49,7 @@ int main() {
 			accumulator = exponentation(accumulator, second_operand);
 			break;
 		}
+		
 	} while (key != 27);
 
 	return 0;
