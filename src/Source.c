@@ -6,6 +6,7 @@
 int main() {
 	int accumulator = 0, second_operand;
 	char key;
+	int a;
 	
 	do {
 		system("CLS");
