@@ -20,7 +20,7 @@ int main() {
 		printf("5. Exponentation\n");
 		printf("ESC. Exit\n");
 
-		key = scanf("%d", &key);
+		key = scanf("%d", &a);
 
 		switch (key) {
 		case '1':
