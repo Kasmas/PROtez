@@ -1,7 +1,7 @@
 #include <ctest.h>
 #include <../src/Calc.h>
 
-CTEST(additiontwopositive_check, addition)
+CTEST(additiontwopositivecheck, addition)
 {
     int result = addition(5, 5);
     
