@@ -1,18 +1,18 @@
 #pragma once
 
-int addition(int A, int B) {
+int Addition(int A, int B) {
 	return A + B;
 }
 
-int subtraction(int A, int B) {
+int Subtraction(int A, int B) {
 	return A - B;
 }
 
-int multiplication(int A, int B) {
+int Multiplication(int A, int B) {
 	return A * B;
 }
 
-int divide(int A, int B) {
+int Divide(int A, int B) {
 	if (B == 0) {
 		return A;
 	}
@@ -20,7 +20,7 @@ int divide(int A, int B) {
 	return A / B;
 }
 
-int exponentation(int A, int B) {
+int Exponentation(int A, int B) {
 	int tmp = 1;
 
 	if (B < 0) {
