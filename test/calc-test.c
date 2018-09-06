@@ -1,4 +1,4 @@
-#include <ctest.h>
+#include <..thirdparty/ctest.h>
 #include <../src/Calc.h>
 
 CTEST(addition_two_positive_check, Addition)
