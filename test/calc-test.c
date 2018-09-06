@@ -1,7 +1,7 @@
 #include <ctest.h>
 #include <../src/Calc.h>
 
-CTEST(additiontwo_positivecheck, addition)
+CTEST(addition_two_positive_check, Addition)
 {
     int result = addition(5, 5);
     
@@ -9,7 +9,7 @@ CTEST(additiontwo_positivecheck, addition)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(additionpositive_andnegativecheck, addition)
+CTEST(addition_positive_and_negative_check, Addition)
 {
 	int result = addition(-5, 5);
 
@@ -17,7 +17,7 @@ CTEST(additionpositive_andnegativecheck, addition)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(subtractiontwo_positivecheck, subtraction)
+CTEST(subtraction_two_positive_check, Subtraction)
 {
 	int result = subtraction(5, 5);
 
@@ -25,7 +25,7 @@ CTEST(subtractiontwo_positivecheck, subtraction)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(subtractionpositiveand_negativecheck, subtraction)
+CTEST(subtraction_positive_and_negative_check, Subtraction)
 {
 	int result = subtraction(-5, 5);
 
@@ -33,7 +33,7 @@ CTEST(subtractionpositiveand_negativecheck, subtraction)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(multiplicationtwo_positivecheck, multiplication)
+CTEST(multiplication_two_positive_check, Multiplication)
 {
 	int result = multiplication(5, 5);
 
@@ -41,7 +41,7 @@ CTEST(multiplicationtwo_positivecheck, multiplication)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(multiplicationpositiveand_negativecheck, multiplication)
+CTEST(multiplication_positive_and_negative_check, Multiplication)
 {
 	int result = multiplication(-5, 5);
 
@@ -49,7 +49,7 @@ CTEST(multiplicationpositiveand_negativecheck, multiplication)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(dividetwo_positivecheck, divide)
+CTEST(divide_two_positive_check, Divide)
 {
 	int result = divide(5, 5);
 
@@ -57,7 +57,7 @@ CTEST(dividetwo_positivecheck, divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(dividepositiveand_negativecheck, divide)
+CTEST(divide_positive_and_negative_check, Divide)
 {
 	int result = divide(-5, 5);
 
@@ -65,7 +65,7 @@ CTEST(dividepositiveand_negativecheck, divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(dividezero_check, divide)
+CTEST(divide_zero_check, Divide)
 {
 	int result = divide(5, 0);
 
@@ -73,7 +73,7 @@ CTEST(dividezero_check, divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationtwo_positivecheck, exponentation)
+CTEST(exponentationtwo_positivecheck, Exponentation)
 {
 	int result = exponentation(2, 5);
 
@@ -81,7 +81,7 @@ CTEST(exponentationtwo_positivecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationpositiveby_negativecheck, exponentation)
+CTEST(exponentation_positive_by_negative_check, Exponentation)
 {
 	int result = exponentation(5, -5);
 
@@ -89,7 +89,7 @@ CTEST(exponentationpositiveby_negativecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationpositiveby_negativecheck, exponentation)
+CTEST(exponentation_positive_by_negative_check, Exponentation)
 {
 	int result = exponentation(1, -5);
 
@@ -97,7 +97,7 @@ CTEST(exponentationpositiveby_negativecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationnegativeby_positivecheck, Exponentation)
+CTEST(exponentation_negative_by_positive_check, Exponentation)
 {
 	int result = exponentation(-5, 2);
 
@@ -105,7 +105,7 @@ CTEST(exponentationnegativeby_positivecheck, Exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationnegativeby_positivecheck, exponentation)
+CTEST(exponentation_negative_by_positive_check, Exponentation)
 {
 	int result = exponentation(-1, 3);
 
@@ -113,7 +113,7 @@ CTEST(exponentationnegativeby_positivecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationtwo_negativecheck, exponentation)
+CTEST(exponentation_two_negative_check, Exponentation)
 {
 	int result = exponentation(-5, -5);
 
@@ -121,7 +121,7 @@ CTEST(exponentationtwo_negativecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationtwo_negativecheck, exponentation)
+CTEST(exponentation_two_negative_check, Exponentation)
 {
 	int result = exponentation(-1, -5);
 
@@ -129,7 +129,7 @@ CTEST(exponentationtwo_negativecheck, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationby_zerocheck, exponentation)
+CTEST(exponentation_by_zero_check, Exponentation)
 {
 	int result = exponentation(5, 0);
 
