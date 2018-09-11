@@ -73,7 +73,7 @@ CTEST(divide_zero_check, Divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentationtwo_positivecheck, Exponentation)
+CTEST(exponentation_two_positivecheck, Exponentation)
 {
 	int result = exponentation(2, 5);
 
