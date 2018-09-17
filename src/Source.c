@@ -10,7 +10,7 @@ int main() {
 	do {
 		system("CLS");
 
-		printf("%d\n", y);
+		printf("%d\n", accumulator);
 
 		printf("Select operation\n");
 		printf("1. Addition\n");
@@ -26,17 +26,17 @@ int main() {
 		case '1':
 			printf("Enter addend: ");
 			scanf_s("%d", &second_operand);
-			y = addition(accumulator, second_operand);
+			accumulator = addition(accumulator, second_operand);
 			break;
 		case '2':
 			printf("Enter subtractor: ");
 			scanf_s("%d", &second_operand);
-			y = subtraction(accumulator, second_operand);
+			accumulator = subtraction(accumulator, second_operand);
 			break;
 		case '3':
 			printf("Enter multiplier: ");
 			scanf_s("%d", &second_operand);
-			y = multiplication(accumulator, second_operand);
+			accumulator = multiplication(accumulator, second_operand);
 			break;
 		case '4':
 			printf("Enter divide: ");
@@ -46,7 +46,7 @@ int main() {
 		case '5':
 			printf("Enter exponent: ");
 			scanf_s("%d", &second_operand);
-			y = exponentation(accumulator, second_operand);
+			accumulator = exponentation(accumulator, second_operand);
 			break;
 		}
 
