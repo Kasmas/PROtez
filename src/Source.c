@@ -4,7 +4,7 @@
 #include "Calc.h"
 
 int main() {
-	int second_operand, y;
+	int second_operand, accumulator = 0;
 	char key;
 
 	do {
@@ -26,27 +26,27 @@ int main() {
 		case '1':
 			printf("Enter addend: ");
 			scanf_s("%d", &second_operand);
-			y = addition(y, second_operand);
+			y = addition(accumulator, second_operand);
 			break;
 		case '2':
 			printf("Enter subtractor: ");
 			scanf_s("%d", &second_operand);
-			y = subtraction(y, second_operand);
+			y = subtraction(accumulator, second_operand);
 			break;
 		case '3':
 			printf("Enter multiplier: ");
 			scanf_s("%d", &second_operand);
-			y = multiplication(y, second_operand);
+			y = multiplication(accumulator, second_operand);
 			break;
 		case '4':
 			printf("Enter divide: ");
 			scanf_s("%d", &second_operand);
-			y = divide(y, second_operand);
+			y = divide(accumulator, second_operand);
 			break;
 		case '5':
 			printf("Enter exponent: ");
 			scanf_s("%d", &second_operand);
-			y = exponentation(y, second_operand);
+			y = exponentation(accumulator, second_operand);
 			break;
 		}
 
