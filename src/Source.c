@@ -4,7 +4,7 @@
 #include "Calc.h"
 
 int main() {
-	int accumulator = 0, second_operand, y;
+	int second_operand, y;
 	char key;
 
 	do {
