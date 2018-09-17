@@ -46,7 +46,6 @@ int exponentation(int A, int B) {
 			}
 		}
 	}
-
 	while (B > 0) {
 		tmp *= A;
 		--B;
