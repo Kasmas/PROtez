@@ -6,6 +6,7 @@
 int main() {
 	int second_operand, accumulator = 0;
 	char key;
+	int a;
 
 	do {
 		system("CLS");
@@ -19,33 +20,34 @@ int main() {
 		printf("4. Divide\n");
 		printf("5. Exponentation\n");
 		printf("ESC. Exit\n");
+		scanf("%d", &a);
 
-		key = getch(NULL);
+		key = a;
 
 		switch (key) {
 		case '1':
 			printf("Enter addend: ");
-			scanf_s("%d", &second_operand);
+			scanf("%d", &second_operand);
 			accumulator = addition(accumulator, second_operand);
 			break;
 		case '2':
 			printf("Enter subtractor: ");
-			scanf_s("%d", &second_operand);
+			scanf("%d", &second_operand);
 			accumulator = subtraction(accumulator, second_operand);
 			break;
 		case '3':
 			printf("Enter multiplier: ");
-			scanf_s("%d", &second_operand);
+			scanf("%d", &second_operand);
 			accumulator = multiplication(accumulator, second_operand);
 			break;
 		case '4':
 			printf("Enter divide: ");
-			scanf_s("%d", &second_operand);
+			scanf("%d", &second_operand);
 			accumulator = divide(accumulator, second_operand);
 			break;
 		case '5':
 			printf("Enter exponent: ");
-			scanf_s("%d", &second_operand);
+			scanf("%d", &second_operand);
 			accumulator = exponentation(accumulator, second_operand);
 			break;
 		}
