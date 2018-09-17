@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CALC_H
+#define CALC_H
 int addition(int A, int B) {
 	return A + B;
 }
@@ -52,3 +53,4 @@ int exponentation(int A, int B) {
 
 	return tmp;
 }
+#endif CALC_H
