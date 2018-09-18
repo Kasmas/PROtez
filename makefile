@@ -15,7 +15,7 @@ test:
 	make bin/calc-test
 	bin/calc-test
 
-bin/calc-test : build/test/main.o build/test/calc-test.o
+bin/calc-test : build/test/main.o build/test/calc-test.o thirdparty/ctest.h
 	gcc build/test/main.o build/test/calc-test.o -o bin/Calc-test $(CFLAGS)
 
 build/test/main.o : src/Calc.h test/main.c thirdparty/ctest.h
