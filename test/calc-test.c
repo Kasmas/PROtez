@@ -35,9 +35,6 @@ CTEST(divide_positive_and_negative_check, divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-
-
-
 CTEST(exponentation_negative_by_positive_check, exponentation)
 {
 	int result = exponentation(-1, 3);
