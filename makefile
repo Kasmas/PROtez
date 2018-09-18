@@ -22,7 +22,7 @@ build/test/main.o : src/Calc.h test/main.c thirdparty/ctest.h
 	gcc -I thirdparty -c test/main.c -o build/test/main.o $(CFLAGS)
 	gcc -c src/Source.c -o build/test/Source.o $(CFLAGS) 
 
-build/test/calc-test.o : src/Calc.h test/calc-test.c
+build/test/calc-test.o : src/Calc.h test/calc-test.c thirdparty/ctest.h
 	gcc -c -I thirdparty test/calc-test.c -o build/test/calc-test.o $(CFLAGS)
 
 build/test/Source.o : src/Calc.h src/Source.c
