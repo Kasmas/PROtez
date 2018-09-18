@@ -16,7 +16,7 @@ test:
 	bin/calc-test
 
 bin/calc-test : build/test/main.o build/test/calc-test.o
-	gcc build/test/main.o build/test/calc-test.o -o bin/Calc-test $(CFLAGS)
+	gcc build/test/main.o build/test/calc-test.o build/test/Source.o -o bin/Calc-test $(CFLAGS)
 
 build/test/main.o : src/Calc.h test/main.c
 	gcc -I thirdparty -c test/main.c -o build/test/main.o $(CFLAGS)
