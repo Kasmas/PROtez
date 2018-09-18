@@ -97,13 +97,13 @@ CTEST(exponentation_positive_by_negative_check, Exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentation_negative_by_positive_check, Exponentation)
-{
-	int result = exponentation(-5, 2);
 
-	int expected = 25;
-	ASSERT_EQUAL(expected, result);
-}
+
+
+
+
+
+
 
 CTEST(exponentation_negative_by_positive_check, Exponentation)
 {
