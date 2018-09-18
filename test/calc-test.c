@@ -1,28 +1,12 @@
 #include <ctest.h>
 #include <../src/Calc.h>
 
-CTEST(addition_two_positive_check, addition)
-{
-    int result = addition(5, 5);
-    
-    int expected = 10;
-    ASSERT_EQUAL(expected, result);
-}
-
 CTEST(addition_positive_and_negative_check, addition)
 {
 	int result = addition(-5, 5);
 
 	int expected = 0;
     ASSERT_EQUAL(expected, result);
-}
-
-CTEST(subtraction_two_positive_check, subtraction)
-{
-	int result = subtraction(5, 5);
-
-	int expected = 0;
-	ASSERT_EQUAL(expected, result);
 }
 
 CTEST(subtraction_positive_and_negative_check, subtraction)
@@ -33,13 +17,6 @@ CTEST(subtraction_positive_and_negative_check, subtraction)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(multiplication_two_positive_check, multiplication)
-{
-	int result = multiplication(5, 5);
-
-	int expected = 25;
-	ASSERT_EQUAL(expected, result);
-}
 
 CTEST(multiplication_positive_and_negative_check, mltiplication)
 {
@@ -49,13 +26,6 @@ CTEST(multiplication_positive_and_negative_check, mltiplication)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(divide_two_positive_check, divide)
-{
-	int result = divide(5, 5);
-
-	int expected = 1;
-	ASSERT_EQUAL(expected, result);
-}
 
 CTEST(divide_positive_and_negative_check, divide)
 {
@@ -65,29 +35,8 @@ CTEST(divide_positive_and_negative_check, divide)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(divide_zero_check, divide)
-{
-	int result = divide(5, 0);
 
-	int expected = 5;
-	ASSERT_EQUAL(expected, result);
-}
 
-CTEST(exponentation_two_positivecheck, exponentation)
-{
-	int result = exponentation(2, 5);
-
-	int expected = 32;
-	ASSERT_EQUAL(expected, result);
-}
-
-CTEST(exponentation_positive_by_negative_check, exponentation)
-{
-	int result = exponentation(1, -5);
-
-	int expected = 1;
-	ASSERT_EQUAL(expected, result);
-}
 
 CTEST(exponentation_negative_by_positive_check, exponentation)
 {
@@ -97,18 +46,3 @@ CTEST(exponentation_negative_by_positive_check, exponentation)
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(exponentation_two_negative_check, exponentation)
-{
-	int result = exponentation(-5, -5);
-
-	int expected = 0;
-	ASSERT_EQUAL(expected, result);
-}
-
-CTEST(exponentation_by_zero_check, exponentation)
-{
-	int result = exponentation(5, 0);
-
-	int expected = 1;
-	ASSERT_EQUAL(expected, result);
-}
