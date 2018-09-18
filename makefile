@@ -15,17 +15,17 @@ test:
 	make bin/calc-test
 	bin/calc-test
 
-bin/calc-test : build/test/main.o build/test/calc-test.o thirdparty/ctest.h
+bin/calc-test : build/test/main.o build/test/calc-test.o
 	gcc build/test/main.o build/test/calc-test.o -o bin/Calc-test $(CFLAGS)
 
-build/test/main.o : src/Calc.h test/main.c thirdparty/ctest.h
+build/test/main.o : src/Calc.h test/main.c
 	gcc -I thirdparty -c test/main.c -o build/test/main.o $(CFLAGS)
 	gcc -c src/Source.c -o build/test/Source.o $(CFLAGS) 
 
 build/test/calc-test.o : src/Calc.h test/calc-test.c thirdparty/ctest.h
 	gcc -c -I thirdparty test/calc-test.c -o build/test/calc-test.o $(CFLAGS)
 
-build/test/Source.o : src/Calc.h src/Source.c thirdparty/ctest.h
+build/test/Source.o : src/Calc.h src/Source.c
 	gcc -c src/Source.c -o build/test/Source.o $(CFLAGS)
 
 clean :
