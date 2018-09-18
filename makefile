@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror -MP -MMD
 SOURCES = src/Source.c src/Calc.h
-.PHONY: clean all Calc test
+.PHONY: clean all PROtez test
 
 all :
 	make bin/Calc
